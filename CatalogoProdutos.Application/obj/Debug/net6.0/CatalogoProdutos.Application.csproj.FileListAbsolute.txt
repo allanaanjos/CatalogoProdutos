@@ -1,0 +1,15 @@
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\bin\Debug\net6.0\CatalogoProdutos.Application.deps.json
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\bin\Debug\net6.0\CatalogoProdutos.Application.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\bin\Debug\net6.0\CatalogoProdutos.Application.pdb
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\bin\Debug\net6.0\CatalogoProdutos.Domain.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\bin\Debug\net6.0\CatalogoProdutos.Domain.pdb
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\obj\Debug\net6.0\CatalogoProdutos.Application.csproj.AssemblyReference.cache
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\obj\Debug\net6.0\CatalogoProdutos.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\obj\Debug\net6.0\CatalogoProdutos.Application.AssemblyInfoInputs.cache
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\obj\Debug\net6.0\CatalogoProdutos.Application.AssemblyInfo.cs
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\obj\Debug\net6.0\CatalogoProdutos.Application.csproj.CoreCompileInputs.cache
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\obj\Debug\net6.0\CatalogoProdutos.Application.csproj.CopyComplete
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\obj\Debug\net6.0\CatalogoProdutos.Application.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\obj\Debug\net6.0\refint\CatalogoProdutos.Application.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\obj\Debug\net6.0\CatalogoProdutos.Application.pdb
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Application\obj\Debug\net6.0\ref\CatalogoProdutos.Application.dll

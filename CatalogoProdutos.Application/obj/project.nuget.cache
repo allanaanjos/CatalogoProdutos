@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "r6F97E6ZcxH1i6ydzErow1BFD5fsEZ+gM1HipLtRQqqPKxXHEEf+R71LHHtnckBsn9Sx68Eui6FQeel55rVREw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Public\\Temp\\CatalogoProdutos\\CatalogoProdutos.Application\\CatalogoProdutos.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\luayn\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\luayn\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

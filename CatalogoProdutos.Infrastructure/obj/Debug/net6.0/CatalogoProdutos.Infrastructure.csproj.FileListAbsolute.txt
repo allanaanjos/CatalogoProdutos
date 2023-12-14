@@ -1,0 +1,17 @@
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\bin\Debug\net6.0\CatalogoProdutos.Infrastructure.deps.json
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\bin\Debug\net6.0\CatalogoProdutos.Infrastructure.runtimeconfig.json
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\bin\Debug\net6.0\CatalogoProdutos.Infrastructure.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\bin\Debug\net6.0\CatalogoProdutos.Infrastructure.pdb
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\bin\Debug\net6.0\CatalogoProdutos.Domain.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\bin\Debug\net6.0\CatalogoProdutos.Domain.pdb
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\CatalogoProdutos.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\CatalogoProdutos.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\CatalogoProdutos.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\CatalogoProdutos.Infrastructure.AssemblyInfo.cs
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\CatalogoProdutos.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\CatalogoProdutos.Infrastructure.csproj.CopyComplete
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\CatalogoProdutos.Infrastructure.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\refint\CatalogoProdutos.Infrastructure.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\CatalogoProdutos.Infrastructure.pdb
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\CatalogoProdutos.Infrastructure.genruntimeconfig.cache
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Infrastructure\obj\Debug\net6.0\ref\CatalogoProdutos.Infrastructure.dll

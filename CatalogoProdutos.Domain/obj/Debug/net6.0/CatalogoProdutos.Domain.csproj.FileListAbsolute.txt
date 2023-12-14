@@ -1,0 +1,12 @@
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\bin\Debug\net6.0\CatalogoProdutos.Domain.deps.json
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\bin\Debug\net6.0\CatalogoProdutos.Domain.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\bin\Debug\net6.0\CatalogoProdutos.Domain.pdb
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\obj\Debug\net6.0\CatalogoProdutos.Domain.csproj.AssemblyReference.cache
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\obj\Debug\net6.0\CatalogoProdutos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\obj\Debug\net6.0\CatalogoProdutos.Domain.AssemblyInfoInputs.cache
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\obj\Debug\net6.0\CatalogoProdutos.Domain.AssemblyInfo.cs
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\obj\Debug\net6.0\CatalogoProdutos.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\obj\Debug\net6.0\CatalogoProdutos.Domain.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\obj\Debug\net6.0\refint\CatalogoProdutos.Domain.dll
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\obj\Debug\net6.0\CatalogoProdutos.Domain.pdb
+C:\Users\Public\Temp\CatalogoProdutos\CatalogoProdutos.Domain\obj\Debug\net6.0\ref\CatalogoProdutos.Domain.dll
