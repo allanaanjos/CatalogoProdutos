@@ -1,5 +1,4 @@
-﻿using CatalogoProdutos.Application.Interface;
-using CatalogoProdutos.Application.Mapping;
+﻿using CatalogoProdutos.Application.Mapping;
 using CatalogoProdutos.Application.Service;
 using CatalogoProdutos.Domain.Interface;
 using CatalogoProdutos.Infrastructure.Context;
@@ -22,7 +21,7 @@ namespace CatalogoProdutos.CrossCutting.Ioc
 
             
 
-           services.AddScoped<IProdutoService, ProdutoService>();
+           services.AddScoped<ProdutoService, ProdutoService>();
            services.AddScoped<IProdutoRepository, ProdutoRepository>();
 
             services.AddAutoMapper(typeof(MappingProdutoDTO));

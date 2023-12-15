@@ -1,5 +1,5 @@
 ﻿using CatalogoProdutos.Application.DTOs;
-using CatalogoProdutos.Application.Interface;
+using CatalogoProdutos.Application.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CatalogoProdutos.Api.Controllers
@@ -8,14 +8,14 @@ namespace CatalogoProdutos.Api.Controllers
     [ApiController]
     public class ProdutoController : ControllerBase
     {
-        private readonly IProdutoService _produtoService;
+        private readonly ProdutoService _produtoService;
 
-        public ProdutoController(IProdutoService produtoService)
+        public ProdutoController(ProdutoService produtoService)
         {
             _produtoService = produtoService;
         }
 
-        //api/produtos 
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerator<ProdutoDTO>>> GetProdutos()
         {
@@ -23,7 +23,7 @@ namespace CatalogoProdutos.Api.Controllers
             return Ok(produtos);
         }
 
-        [HttpGet("{id:int:min(1)}", Name = "GetProdutoId")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<ProdutoDTO>> Get(int id)
         {
             var produto = await _produtoService.GetProdutoById(id);
@@ -32,45 +32,41 @@ namespace CatalogoProdutos.Api.Controllers
             {
                 return NotFound();
             }
-            return Ok(produto);
+            return Ok();
         }
 
         [HttpPost]
         public async Task<ActionResult<ProdutoDTO>> Post([FromBody] ProdutoDTO produtoDTO)
         {
             if (ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
-            }
 
             await _produtoService.Add(produtoDTO);
 
-            return new CreatedAtRouteResult("GetProdutoId", new { id = produtoDTO.Id }, produtoDTO);
+             return Ok();
         }
 
-        [HttpPut]
+        [HttpPut("{id:int}")]
         public async Task<ActionResult<ProdutoDTO>> Put(int id, [FromBody] ProdutoDTO produtoDTO)
         {
             if (id != produtoDTO.Id)
-            {
-                return BadRequest();
-            }
+               return BadRequest();
 
             await _produtoService.Update(produtoDTO);
-            return Ok(produtoDTO);
+            return Ok();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<ActionResult<ProdutoDTO>> Delete(int id)
         {
             var produtoDto = _produtoService.GetProdutoById(id);
+            
             if(produtoDto == null)
-            {
-                return NotFound();
-            }
+               return NotFound();
+           
 
             await _produtoService.Remove(id);
-            return Ok(produtoDto);
+            return Ok();
         }
     }
 }

@@ -7,18 +7,18 @@ namespace CatalogoProdutos.Infrastructure.Context
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { } 
 
-        public DbSet<Produtos> Produtos { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
-            mb.Entity<Produtos>().HasKey(c => c.ProdutoId);
+            mb.Entity<Produto>().HasKey(c => c.ProdutoId);
             
-            mb.Entity<Produtos>().Property(c => c.Nome).HasMaxLength(100).IsRequired();
-            mb.Entity<Produtos>().Property(c => c.PrecoDeVenda).HasPrecision(14, 2);
-            mb.Entity<Produtos>().Property(c => c.Descricao).HasMaxLength(150).IsRequired();
-            mb.Entity<Produtos>().Property(c => c.Tipo).IsRequired();
-            mb.Entity<Produtos>().Property(c => c.Quantidade).IsRequired();
-            mb.Entity<Produtos>().Property(c => c.DataCadastro).IsRequired();
+            mb.Entity<Produto>().Property(c => c.Nome).HasMaxLength(100).IsRequired();
+            mb.Entity<Produto>().Property(c => c.Preco).HasPrecision(14, 2);
+            mb.Entity<Produto>().Property(c => c.Descricao).HasMaxLength(150).IsRequired();
+            mb.Entity<Produto>().Property(c => c.Tipo).IsRequired();
+            mb.Entity<Produto>().Property(c => c.Quantidade).IsRequired();
+            mb.Entity<Produto>().Property(c => c.DataCadastro).IsRequired();
         }
     }
 }

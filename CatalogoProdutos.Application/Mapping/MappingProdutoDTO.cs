@@ -8,7 +8,7 @@ namespace CatalogoProdutos.Application.Mapping
     {
         public MappingProdutoDTO()
         {
-            CreateMap<Produtos, ProdutoDTO>().ReverseMap();
+            CreateMap<Produto, ProdutoDTO>().ReverseMap();
         }
     }
 }

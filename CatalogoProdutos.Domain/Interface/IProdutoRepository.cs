@@ -4,10 +4,10 @@ namespace CatalogoProdutos.Domain.Interface
 {
     public interface IProdutoRepository
     {
-        Task<IEnumerable<Produtos>> GetProdutosAsync();
-        Task<Produtos?> GetByIdAsync(int id);
-        Task<Produtos> CreateAsync(Produtos produtos);
-        Task<Produtos> UpdateAsync(Produtos produtos);
-        Task<Produtos> RemoveAsync(Produtos produtos);
+        Task<IEnumerable<Produto>> GetProdutosAsync();
+        Task<Produto?> GetByIdAsync(int id);
+        Task<Produto> CreateAsync(Produto produtos);
+        Task<Produto> UpdateAsync(Produto produtos);
+        Task<Produto> RemoveAsync(Produto produtos);
     }
 }

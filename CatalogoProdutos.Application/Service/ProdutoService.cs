@@ -1,11 +1,19 @@
 ﻿using AutoMapper;
 using CatalogoProdutos.Application.DTOs;
-using CatalogoProdutos.Application.Interface;
 using CatalogoProdutos.Domain.Entities;
 using CatalogoProdutos.Domain.Interface;
 
 namespace CatalogoProdutos.Application.Service
 {
+    public interface IProdutoService
+    {
+        Task<IEnumerable<ProdutoDTO>> GetProdutos();
+        Task<ProdutoDTO> GetProdutoById(int id);
+        Task Add(ProdutoDTO produtoDTO);
+        Task Update(ProdutoDTO produtoDTO);
+        Task Remove(int id);
+    }
+
     public class ProdutoService : IProdutoService
     {
         private readonly IProdutoRepository _produtoRepository;
@@ -19,23 +27,20 @@ namespace CatalogoProdutos.Application.Service
 
         public async Task Add(ProdutoDTO produtoDTO)
         {
-            var produto = _mapper.Map<Produtos>(produtoDTO);
+            var produto = _mapper.Map<Produto>(produtoDTO);
             await _produtoRepository.CreateAsync(produto);
         }
 
         public async Task<ProdutoDTO> GetProdutoById(int id)
         {
             var produto = await _produtoRepository.GetProdutosAsync();
-            return  _mapper.Map<ProdutoDTO>(produto);
+            return _mapper.Map<ProdutoDTO>(produto);
 
         }
 
-        public async Task<IEnumerable<ProdutoDTO>> GetProdutos()
-        {
-            var produto = await _produtoRepository.GetProdutosAsync();
-            return _mapper.Map<IEnumerable<ProdutoDTO>>(produto);
-        }
-
+        public async Task<IEnumerable<ProdutoDTO>> GetProdutos() 
+          => (await _produtoRepository.GetProdutosAsync()).Select(p => new ProdutoDTO(p));
+        
         public async Task Remove(int id)
         {
             var produto = _produtoRepository.GetByIdAsync(id).Result;
@@ -45,8 +50,13 @@ namespace CatalogoProdutos.Application.Service
 
         public async Task Update(ProdutoDTO produtoDTO)
         {
-            var produto = _mapper.Map<Produtos>(produtoDTO);
-            await _produtoRepository.UpdateAsync(produto);
+            var produto = await _produtoRepository.GetByIdAsync(produtoDTO.Id);
+            produto.AlterarProduto(produtoDTO.Nome,
+                                   produtoDTO.Preco,
+                                   produtoDTO.Descricao,
+                                   produtoDTO.Quantidade,
+                                   produtoDTO.Tipo,
+                                   produtoDTO.DataCadastro);
         }
     }
 }
