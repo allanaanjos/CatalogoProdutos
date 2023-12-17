@@ -28,9 +28,9 @@ namespace CatalogoProdutos.Infrastructure.Repository
             return produtos;
         }
 
-        public async Task<Produto?> GetByIdAsync(int id)
+        public async Task<Produto> GetByIdAsync(int? id)
         {
-            return await _context.Produtos.FindAsync(id);
+            return await _context.Produtos.SingleOrDefaultAsync(p => p.ProdutoId == id);
         }
 
         public async Task<IEnumerable<Produto>> GetProdutosAsync()
@@ -44,6 +44,8 @@ namespace CatalogoProdutos.Infrastructure.Repository
             await _context.SaveChangesAsync();
             return produtos;
         }
+
+        public void SaveChangesAsync() => _context.SaveChangesAsync();
 
        
     }

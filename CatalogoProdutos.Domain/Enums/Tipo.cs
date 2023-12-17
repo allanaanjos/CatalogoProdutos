@@ -1,4 +1,4 @@
 ﻿namespace CatalogoProdutos.Domain.Enums
 {
-    public enum Tipo { Orgânico, NãoOrgânico }
+    public enum Tipo { Organico, NãoOrgânico }
 }

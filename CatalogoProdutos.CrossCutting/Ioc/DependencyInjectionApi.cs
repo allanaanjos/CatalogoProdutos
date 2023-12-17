@@ -21,7 +21,7 @@ namespace CatalogoProdutos.CrossCutting.Ioc
 
             
 
-           services.AddScoped<ProdutoService, ProdutoService>();
+           services.AddScoped<ProdutoService>();
            services.AddScoped<IProdutoRepository, ProdutoRepository>();
 
             services.AddAutoMapper(typeof(MappingProdutoDTO));

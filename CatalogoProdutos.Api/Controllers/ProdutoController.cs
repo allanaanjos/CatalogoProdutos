@@ -17,34 +17,37 @@ namespace CatalogoProdutos.Api.Controllers
 
         
         [HttpGet]
-        public async Task<ActionResult<IEnumerator<ProdutoDTO>>> GetProdutos()
+        public async Task<ActionResult<IEnumerable<ProdutoDTO>>> GetProdutos()
         {
             var produtos = await _produtoService.GetProdutos();
             return Ok(produtos);
         }
 
-        [HttpGet("{id:int}")]
+
+        [HttpGet("{id}", Name = "GetProduto")]
         public async Task<ActionResult<ProdutoDTO>> Get(int id)
         {
             var produto = await _produtoService.GetProdutoById(id);
 
             if (produto == null)
-            {
-                return NotFound();
-            }
-            return Ok();
+              return NotFound();
+            
+            return Ok(produto);
         }
 
         [HttpPost]
-        public async Task<ActionResult<ProdutoDTO>> Post([FromBody] ProdutoDTO produtoDTO)
+        public async Task<ActionResult> Post([FromBody] ProdutoDTO produtoDto)
         {
-            if (ModelState.IsValid)
-                return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+               return BadRequest(ModelState);
+            
+           await _produtoService.Add(produtoDto);
 
-            await _produtoService.Add(produtoDTO);
+            return new CreatedAtRouteResult("GetProduto",
+                new { id = produtoDto.Id }, produtoDto);
 
-             return Ok();
         }
+
 
         [HttpPut("{id:int}")]
         public async Task<ActionResult<ProdutoDTO>> Put(int id, [FromBody] ProdutoDTO produtoDTO)
