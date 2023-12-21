@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    background-color: #343a40; /* Cor de fundo da barra de navegação */
+}
+
+ul.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.navbar-nav li {
+    margin-right: 15px;
+}
+
+ul.navbar-nav li a {
+    color: #ffffff; /* Cor do texto dos links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+ul.navbar-nav li a:hover {
+    color: #28a745; /* Cor do texto ao passar o mouse sobre o link */
+}

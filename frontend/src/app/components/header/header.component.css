@@ -1,0 +1,12 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header-text {
+    text-align: center;
+    padding: 20px; 
+}
+
+.nav-link {
+    font-size: 14px; 
+}

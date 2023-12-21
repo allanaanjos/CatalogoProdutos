@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Cor de fundo do corpo da página */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #007bff; /* Cor do texto do cabeçalho */
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da; /* Cor da borda do input */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse sobre ele */
+}
+
+.validation p {
+    color: #dc3545; /* Cor do texto de erro */
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.loader {
+    
+    text-align: center;
+}
+
+.loader .spinner-border {
+    margin-top: 20px;
+}

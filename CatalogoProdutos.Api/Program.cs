@@ -1,4 +1,6 @@
 using CatalogoProdutos.CrossCutting.Ioc;
+using CatalogoProdutos.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 
@@ -14,7 +16,10 @@ builder.Services.AddSwaggerGen(c =>
 });
 builder.Services.AddInjectionInfrastructure();
 
-
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseInMemoryDatabase(databaseName: "CatalogoProdutoDB");
+});
 
 var app = builder.Build();
 
@@ -27,6 +32,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors(opt => opt.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 app.MapControllers();
 

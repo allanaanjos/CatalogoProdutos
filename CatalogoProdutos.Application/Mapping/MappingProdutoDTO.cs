@@ -8,7 +8,13 @@ namespace CatalogoProdutos.Application.Mapping
     {
         public MappingProdutoDTO()
         {
-            CreateMap<Produto, ProdutoDTO>().ReverseMap().ForMember(d => d.DataCadastro, o => o.MapFrom(o => DateTime.Now));
+            CreateMap<Produto, ProdutoDTO>()
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.ProdutoId));
+
+
+            CreateMap<ProdutoDTO, Produto>()
+           .ForMember(dest => dest.DataCadastro, opt => opt.MapFrom(src=>  DateTime.Now));
+
         }
     }
 }

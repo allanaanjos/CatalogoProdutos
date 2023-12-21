@@ -1,0 +1,50 @@
+<h2>Cadastre um Novo Produto</h2>
+
+
+<div class="loader" *ngIf="isLoading">
+    <div class="spinner-border" role="status">
+        
+    </div>
+</div>
+
+<form (ngSubmit)="submit()" [formGroup]="produtoForm" #formDir="ngForm">
+    <div class="form-group">
+        <label for="nome">Produto:</label>
+        <input type="text" placeholder="Nome do produto" formControlName="nome" class="form-control" required>
+        <div *ngIf="nomeProduto.invalid && formDir.submitted" class="validation">
+            <p *ngIf="nomeProduto.errors?.['required']">O nome do produto é obrigatório.</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="preco">Preço:</label>
+        <input type="number" placeholder="Preço do produto" formControlName="preco" class="form-control" required>
+        <div *ngIf="preco.invalid && formDir.submitted" class="validation">
+            <p *ngIf="preco.errors?.['required']">Preço é obrigatório.</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="descricao">Descrição:</label>
+        <input type="text" placeholder="Descrição do produto" formControlName="descricao" class="form-control" required>
+        <div *ngIf="descricao.invalid && formDir.submitted" class="validation">
+            <p *ngIf="descricao.errors?.['required']">Descrição é obrigatória.</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="tipo">Tipo:</label>
+        <select formControlName="tipo" class="form-control">
+            <option *ngFor="let tipo of tiporesp" [value]="tipo">{{ tipo }}</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="quantidade">Quantidade:</label>
+        <input type="text" placeholder="Quantidade de produtos" formControlName="quantidade" class="form-control" required>
+        <div *ngIf="quantidade.invalid && formDir.submitted" class="validation">
+            <p *ngIf="quantidade.errors?.['required']">Quantidade é obrigatória.</p>
+        </div>
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="{{btnText}}" [disabled]="isLoading">

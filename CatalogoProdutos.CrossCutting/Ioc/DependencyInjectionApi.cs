@@ -11,20 +11,12 @@ namespace CatalogoProdutos.CrossCutting.Ioc
     public static class DependencyInjectionApi
     {
         public static IServiceCollection AddInjectionInfrastructure(this IServiceCollection services)
-        {
-            services.AddDbContext<AppDbContext>(options =>
-            {
-                options.UseInMemoryDatabase(databaseName: "CatalogoProdutoDB");
-
-
-            }); 
-
-            
+        {  
 
            services.AddScoped<ProdutoService>();
            services.AddScoped<IProdutoRepository, ProdutoRepository>();
 
-            services.AddAutoMapper(typeof(MappingProdutoDTO));
+           services.AddAutoMapper(typeof(MappingProdutoDTO));
 
             
 
