@@ -4,7 +4,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { NovoProdutoComponent } from './components/novo-produto/novo-produto.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
 const routes: Routes = [
-   {path: '', component: MenuComponent},
+   {path: '', component: NovoProdutoComponent},
    {path: 'produto/novo', component: NovoProdutoComponent},
    {path: 'produtos', component: ProdutosComponent}
 ];
